@@ -32,8 +32,10 @@
         <logback.version>1.2.11</logback.version>
         <slf4j.version>1.7.36</slf4j.version>
         <awaitility.version>4.2.0</awaitility.version>
-        <rest-assured.version>5.0.1</rest-assured.version>
-        <json-schema-validator.version>1.0.69</json-schema-validator.version>
+        <rest-assured.version>5.1.0</rest-assured.version>
+        <json-schema-validator.version>1.0.70</json-schema-validator.version>
+        <commons-text.version>1.9</commons-text.version>
+        <strimzi-test-container.version>0.101.0</strimzi-test-container.version>
 
         <maven.version>3.8.5</maven.version>
         <maven-plugin-tools.version>3.6.4</maven-plugin-tools.version>
@@ -49,7 +51,7 @@
         <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
         <maven-plugin-plugin.version>3.6.4</maven-plugin-plugin.version>
         <formatter-maven-plugin.version>2.18.0</formatter-maven-plugin.version>
-        <impsort-maven-plugin.version>1.6.2</impsort-maven-plugin.version>
+        <impsort-maven-plugin.version>1.7.0</impsort-maven-plugin.version>
         <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
         <git-commit-id-maven-plugin.version>5.0.0</git-commit-id-maven-plugin.version>
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
@@ -73,7 +75,7 @@
         <cos.connector.catalog.group>all</cos.connector.catalog.group>
 
         <cos.connector.version>0.1</cos.connector.version>
-        <cos.connector.revision>27</cos.connector.revision>
+        <cos.connector.revision>28</cos.connector.revision>
         <cos.connector.operator.version>[1.0.0,2.0.0)</cos.connector.operator.version>
         <cos.kamelets.version>0.0.1</cos.kamelets.version>
 
@@ -314,6 +316,16 @@
                 <groupId>io.rest-assured</groupId>
                 <artifactId>rest-assured</artifactId>
                 <version>${rest-assured.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${commons-text.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.strimzi</groupId>
+                <artifactId>strimzi-test-container</artifactId>
+                <version>${strimzi-test-container.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
